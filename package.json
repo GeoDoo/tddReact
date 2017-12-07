@@ -35,6 +35,7 @@
     "enzyme-adapter-react-16": "1.1.0",
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.5",
+    "ghooks": "2.0.2",
     "html-webpack-plugin": "2.30.1",
     "jest": "21.2.1",
     "regenerator-runtime": "0.11.0",
@@ -49,6 +50,9 @@
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run test:coverage"
     }
   },
   "jest": {
