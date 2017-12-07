@@ -58,7 +58,8 @@
   "jest": {
     "setupTestFrameworkScriptFile": "./src/setupTests.js",
     "collectCoverageFrom": [
-      "src/*.{js,jsx}",
+      "**src/**",
+      "!**/__snapshots__/**",
       "!**/node_modules/**",
       "!**/vendor/**"
     ],
