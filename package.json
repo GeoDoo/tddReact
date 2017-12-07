@@ -8,6 +8,7 @@
     "start": "webpack-dev-server",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "build": "webpack"
   },
   "repository": {
@@ -51,6 +52,19 @@
     }
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./src/setupTests.js"
+    "setupTestFrameworkScriptFile": "./src/setupTests.js",
+    "collectCoverageFrom": [
+      "src/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }
