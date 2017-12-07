@@ -16,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/GeoDoo/tddReact/issues"
   },
-  "homepage": "https://github.com/GeoDoo/tddReact#readme"
+  "homepage": "https://github.com/GeoDoo/tddReact#readme",
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
